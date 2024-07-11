@@ -17,7 +17,7 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<BakeryShop />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<BakeryShop />} />
           {/* Use the Products component */}
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
