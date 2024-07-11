@@ -1,56 +1,41 @@
-import React, { useState } from "react";
-import BakeryItem from "./BakeryItem";
-import ShoppingCart from "./ShoppingCart";
-import "../App.css";
+// src/components/BakeryShop.jsx
 
-// Sample data for bakery items with image URLs
-const bakeryItems = [
-  {
-    id: 1,
-    name: "Croissant",
-    description: "Flaky and buttery",
-    price: 2.5,
-    image: "https://example.com/images/croissant.jpg",
-  },
-  {
-    id: 2,
-    name: "Baguette",
-    description: "Crispy and chewy",
-    price: 3.0,
-    image: "https://example.com/images/baguette.jpg",
-  },
-  {
-    id: 3,
-    name: "Macaron",
-    description: "Sweet and delicate",
-    price: 1.5,
-    image: "https://example.com/images/macaron.jpg",
-  },
-  {
-    id: 4,
-    name: "Muffin",
-    description: "Soft and moist",
-    price: 2.0,
-    image: "https://example.com/images/muffin.jpg",
-  },
-];
+import React, { useState } from "react";
+
+import Products from "./Products";
+import croissant from "../assets/croissant.jpg";
 
 const BakeryShop = () => {
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (item) => {
-    setCart([...cart, item]);
-  };
-
+  // Example product data
+  const products = [
+    {
+      id: 1,
+      name: "Croissant",
+      price: 2.5,
+      image: { croissant },
+      description: "Freshly baked croissant",
+    },
+    {
+      id: 2,
+      name: "Baguette",
+      price: 3.0,
+      // image: "./assets/baguette.jpg",
+      description: "Traditional French baguette",
+    },
+    // Add more products as needed
+  ];
+  const [productsList, setProductsList] = useState(products);
   return (
-    <div className="container">
-      <h1>Bakery Shop</h1>
-      <div className="items-container">
-        {bakeryItems.map((item) => (
-          <BakeryItem key={item.id} item={item} addToCart={addToCart} />
-        ))}
+    <div className="bakery-shop">
+      <h2>Our Products</h2>
+      <div className="products">
+        {productsList.map(
+          (product) => (
+            <img src={product.image} alt="" />
+          )
+          // <Products key={product.id} product={product}></Products>
+        )}
       </div>
-      <ShoppingCart cart={cart} />
     </div>
   );
 };
