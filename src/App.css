@@ -1,11 +1,11 @@
-/* src/App.css */
-
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
@@ -45,6 +45,7 @@ body {
   padding: 20px 0;
 }
 
+/* Bakery Shop Section */
 .bakery-shop {
   padding: 20px;
 }
@@ -69,6 +70,7 @@ body {
   border-radius: 5px;
 }
 
+/* Cart Component */
 .cart {
   background-color: #fff;
   padding: 20px;
@@ -98,6 +100,17 @@ body {
   border-bottom: none;
 }
 
+.cart ul li .item-image {
+  max-width: 80px; /* Adjust the max-width as needed */
+  max-height: 80px; /* Adjust the max-height as needed */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart ul li .item-details {
+  flex: 1;
+}
+
 .cart ul li button {
   background-color: #f44336;
   color: white;
@@ -114,16 +127,59 @@ body {
 .cart ul li button:hover {
   background-color: #d32f2f;
 }
-/* src/components/About.css */
-
-.about {
+/* Cart Component */
+.cart {
+  background-color: #fff;
   padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
-.about h2 {
-  margin-bottom: 10px;
+.cart h2 {
+  margin-bottom: 20px;
 }
 
-.about p {
-  line-height: 1.6;
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart ul li:last-child {
+  border-bottom: none;
+}
+
+.cart ul li .item {
+  display: flex;
+  flex: 1;
+}
+
+.cart ul li .item img {
+  max-width: 80px; /* Adjust the max-width as needed */
+  height: auto;
+  border-radius: 5px;
+}
+body {
+  margin: 0;
+  display: block;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.bakery {
+  margin-left: 20px;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

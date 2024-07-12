@@ -1,14 +1,15 @@
-// src/components/About.jsx
+// src/components/Bakery.jsx
 
 import React from "react";
 
 const About = () => {
   return (
-    <div className="about">
-      <h2>About Us</h2>
+    <div className="bakery">
+      <h2>Our Bakery</h2>
       <p>
-        This is the about page content. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nulla accumsan euismod dolor id consequat.
+        Welcome to our bakery! We specialize in creating delicious treats for
+        every occasion. Whether you're looking for cakes, pastries, or breads,
+        we have something to satisfy your sweet tooth.
       </p>
     </div>
   );
