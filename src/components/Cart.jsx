@@ -1,9 +1,12 @@
 import React from "react";
 import TotalPrice from "./TotalPrice";
+import Layout from "./Layout";
+import EmptyCart from "./EmptyCart";
 
 const Cart = ({ cartItems }) => {
+  console.log(cartItems.length);
   return (
-    <>
+    <Layout>
       {cartItems.map((item) => {
         return (
           <div
@@ -37,8 +40,12 @@ const Cart = ({ cartItems }) => {
           </div>
         );
       })}
-      <TotalPrice cartItems={cartItems}></TotalPrice>
-    </>
+      {cartItems.length === 0 ? (
+        <EmptyCart></EmptyCart>
+      ) : (
+        <TotalPrice cartItems={cartItems}></TotalPrice>
+      )}
+    </Layout>
   );
 };
 export default Cart;

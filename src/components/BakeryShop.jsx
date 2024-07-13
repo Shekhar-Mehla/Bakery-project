@@ -1,21 +1,28 @@
 // src/components/BakeryShop.jsx
 
+import React from "react";
 import Products from "./Products";
+import Layout from "./Layout";
 
-import { useActionData } from "react-router-dom";
-import { useEffect } from "react";
-const BakeryShop = ({ productsLiist,CardItems }) => {
-  // Example product data
-
+const BakeryShop = ({ productsList, CardItems }) => {
   return (
-    <div className="bakery-shop">
-      <h2>Our Products</h2>
-      <div className="products">
-        {productsLiist.map((product) => {
-        return <Products CardItems = {CardItems} key={product.id} product={product}></Products>;
-        })}
+    <Layout>
+      <div className="container">
+        <div className="row">
+          {productsList && productsList.length > 0 ? (
+            productsList.map((product) => (
+              <div key={product.id} className="col-md-4 mb-4">
+                <Products product={product} CardItems={CardItems} />
+              </div>
+            ))
+          ) : (
+            <div className="col-md-12 text-center">
+              <p>No products available</p>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
