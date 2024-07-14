@@ -1,5 +1,3 @@
-// src/components/Header.jsx
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -50,7 +48,6 @@ const Header = () => {
                   Services
                 </Link>
               </li>
-              {/* Additional Items */}
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">
                   Contact

@@ -58,6 +58,13 @@ const App = () => {
       description:
         "Delicate French pastry made with almond flour, filled with ganache or buttercream",
     },
+    {
+      id: 1,
+      name: "Croissant",
+      price: 2.5,
+      image: croissant,
+      description: "Freshly baked croissant",
+    },
 
     // Add more products as needed
   ];
