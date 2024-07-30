@@ -3,10 +3,15 @@
 import React from "react";
 import Products from "./Products";
 import Layout from "./Layout";
+import HeroSection from "./HeroSection";
+import ProducstByCatogries from "./ProducstByCatogries";
 
 const BakeryShop = ({ productsList, CardItems }) => {
   return (
     <Layout>
+      <HeroSection></HeroSection>
+      <ProducstByCatogries></ProducstByCatogries>
+
       <div className="container">
         <div className="row">
           {productsList && productsList.length > 0 ? (

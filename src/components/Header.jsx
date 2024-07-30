@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
     <header className="header bg-light">
-      <div className="container">
+      <div className="">
         <nav className="navbar navbar-expand-lg navbar-light">
           <Link className="navbar-brand" to="/">
             Your Logo
@@ -23,6 +25,29 @@ const Header = () => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
+              <li>
+                {/* Search Form */}
+                <form className="form-inline searchform my-2 my-lg-0">
+                  <input
+                    className="form-control mr-sm-2 w-100"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button className="btn searchbtn my-2 my-sm-0" type="submit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-search"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                  </button>
+                </form>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   Home
@@ -33,11 +58,7 @@ const Header = () => {
                   Products
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/cart">
-                  Cart
-                </Link>
-              </li>
+
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
                   About
@@ -53,31 +74,16 @@ const Header = () => {
                   Contact
                 </Link>
               </li>
-              <li>
-                {/* Search Form */}
-                <form className="form-inline searchform my-2 my-lg-0">
-                  <input
-                    className="form-control mr-sm-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button
-                    className="btn btn-outline-primary searchbtn my-2 my-sm-0"
-                    type="submit"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-search"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                    </svg>
+              <li className="nav-item">
+                <Link className="nav-link" to="/cart">
+                  <button type="button" class="btn btn-muted position-relative">
+                    <FontAwesomeIcon icon={faShoppingCart} size="2x" />
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
                   </button>
-                </form>
+                </Link>
               </li>
             </ul>
           </div>

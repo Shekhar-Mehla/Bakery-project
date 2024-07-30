@@ -17,8 +17,11 @@ import macaron from "./assets/macaron.jpg";
 import Cinnamon_Roll from "./assets/Cinnamon_Roll.jpg";
 import blueberry_muffin from "./assets/blueberryMuffin.jpg";
 
+
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
+
+  // fetch data from api
 
   // Define your products array with additional items
   const products = [
@@ -86,6 +89,7 @@ const App = () => {
           path="/"
           element={
             <BakeryShop productsList={productsList} CardItems={CardItems} />
+            
           }
         />
         <Route
