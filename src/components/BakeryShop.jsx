@@ -5,14 +5,17 @@ import Products from "./Products";
 import Layout from "./Layout";
 import HeroSection from "./HeroSection";
 import ProducstByCatogries from "./ProducstByCatogries";
+import SpecialDeal from "./SpecialDeal";
 
-const BakeryShop = ({ productsList, CardItems }) => {
+const BakeryShop = ({ productsList, CardItems, specialDeals }) => {
   return (
     <Layout>
       <HeroSection></HeroSection>
       <ProducstByCatogries></ProducstByCatogries>
+      <SpecialDeal item={specialDeals}></SpecialDeal>
 
       <div className="container">
+        <h3>TOP PICKS</h3>
         <div className="row">
           {productsList && productsList.length > 0 ? (
             productsList.map((product) => (

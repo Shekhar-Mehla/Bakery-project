@@ -10,6 +10,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4efef;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -32,6 +33,62 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.special-deal {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+}
+
+.special-deal h2 {
+  text-align: center;
+  color: #333;
+}
+
+.special-deal-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.special-deal-image {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.special-deal-details {
+  flex: 1;
+}
+
+.special-deal-pricing {
+  margin: 10px 0;
+}
+
+.cta-button {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cta-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.customer-reviews {
+  margin-top: 20px;
+}
+
+.review {
+  padding: 10px;
+  border-top: 1px solid #ddd;
 }
 
 .header nav ul li {
@@ -348,4 +405,279 @@ button {
 }
 .card:hover img {
   transform: scale(1.1); /* Scale image on hover */
+}
+.special-deal-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.special-deal-title {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.special-deal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.special-deal-image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.special-deal-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.special-deal-info {
+  text-align: center;
+  color: #555;
+}
+
+.special-deal-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.special-deal-description {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.special-deal-pricing {
+  margin: 20px 0;
+}
+
+.icon {
+  color: #ff6347;
+  margin-right: 8px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff6347;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e55347;
+}
+
+.customer-reviews {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.review {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+.review strong {
+  color: #333;
+}
+/* SpecialDeal.css */
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-danger {
+  background-color: #ff6347;
+  border-color: #ff6347;
+}
+
+.btn-danger:hover {
+  background-color: #e55347;
+  border-color: #e55347;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+}
+
+.list-unstyled li {
+  font-size: 1rem;
+}
+/* SpecialDeal.css */
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.card-title:hover {
+  color: #ff6347; /* Change title color on hover */
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.card-text:hover {
+  color: #333; /* Change text color on hover */
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+}
+
+.list-unstyled li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.list-unstyled li:hover {
+  background-color: #f8f9fa; /* Light background on hover */
+}
+
+.icon {
+  color: #ff6347;
+  margin-right: 10px;
+}
+
+.btn-danger {
+  background-color: #ff6347;
+  border-color: #ff6347;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #e55347;
+  border-color: #e55347;
+}
+
+.customer-reviews {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.review {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+.review strong {
+  color: #333;
+}
+/* SpecialDeal.css */
+.card {
+  transition: box-shadow 0.3s ease;
+  overflow: hidden; /* Ensure that overflow does not affect other elements */
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+}
+
+.list-unstyled li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.icon {
+  color: #ff6347;
+  margin-right: 10px;
+}
+
+.btn-danger {
+  background-color: #ff6347;
+  border-color: #ff6347;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #e55347;
+  border-color: #e55347;
+}
+
+.customer-reviews {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.review {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+.review strong {
+  color: #333;
+}
+
+/* Image scaling on hover */
+.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .img-fluid {
+  transform: scale(1.05); /* Slightly scale the image */
 }
