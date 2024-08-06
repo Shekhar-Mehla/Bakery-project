@@ -53,10 +53,39 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/products">
+              <li className="nav-item text-dark">
+                <div className="dropdown">
+                  <button
+                    className=" dropdown-toggle category"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Category
+                  </button>
+                  <div
+                    className="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <Link Link className="dropdown-item text-dark" to="/">
+                      Bread
+                    </Link>
+                    <Link Link className="dropdown-item text-dark" to="#">
+                      Cake
+                    </Link>
+                    <Link Link className="dropdown-item text-dark" to="#">
+                      Pastries
+                    </Link>
+                    <Link Link className="dropdown-item text-dark" to="#">
+                      Cookies
+                    </Link>
+                  </div>
+                </div>
+
+                {/* <Link className="nav-link" to="/products">
                   Products
-                </Link>
+                </Link> */}
               </li>
 
               <li className="nav-item">

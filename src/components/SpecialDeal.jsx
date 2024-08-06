@@ -4,7 +4,7 @@ import React from "react";
 const SpecialDeal = ({ item }) => {
   return (
     <div className="container my-5">
-      <h3 className="m-2">THIS WEKKS SPECIAL'S</h3>
+      <h3 className="m-2">THIS WEEKS SPECIAL'S</h3>
       <div className="card shadow-lg">
         <div className="row g-0">
           <div className="col-md-6">

@@ -34,6 +34,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.category {
+  margin-top: unset;
+  padding-top: unset;
+  font-weight: 500;
+}
 .special-deal {
   padding: 20px;
   background-color: #f9f9f9;
