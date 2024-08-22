@@ -80,6 +80,12 @@ const Header = () => {
                     <Link Link className="dropdown-item text-dark" to="#">
                       Cookies
                     </Link>
+                    <Link Link className="dropdown-item text-dark" to="#">
+                      Muffins
+                    </Link>
+                    <Link Link className="dropdown-item text-dark" to="#">
+                      Bagels
+                    </Link>
                   </div>
                 </div>
 

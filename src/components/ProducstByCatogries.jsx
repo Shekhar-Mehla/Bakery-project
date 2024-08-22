@@ -14,7 +14,7 @@ const ProducstByCatogries = () => {
             </div>
             <div className="card-img-overlay">
               <h3 className="card-title  fw-bolder text-white text-center mt-5">
-                LOAVES
+                Cakes
               </h3>
             </div>
           </a>
@@ -26,7 +26,7 @@ const ProducstByCatogries = () => {
             </div>
             <div className="card-img-overlay">
               <h3 className="card-title  fw-bolder text-white text-center mt-5">
-                SNACKS
+                Breads
               </h3>
             </div>
           </a>
@@ -38,7 +38,7 @@ const ProducstByCatogries = () => {
             </div>
             <div className="card-img-overlay">
               <h3 className="card-title  fw-bolder text-white text-center mt-5">
-                LUNCHBOX
+                Tarts
               </h3>
             </div>
           </a>
@@ -50,7 +50,7 @@ const ProducstByCatogries = () => {
             </div>
             <div className="card-img-overlay">
               <h3 className="card-title  fw-bolder text-white text-center mt-5">
-                ARTISIAN
+                Cookies
               </h3>
             </div>
           </a>
@@ -62,7 +62,7 @@ const ProducstByCatogries = () => {
             </div>
             <div className="card-img-overlay">
               <h3 className="card-title  fw-bolder text-white text-center mt-5">
-                HELATH
+                Bagels
               </h3>
             </div>
           </a>
@@ -74,7 +74,7 @@ const ProducstByCatogries = () => {
             </div>
             <div className="card-img-overlay">
               <h3 className="card-title fw-bolder text-white text-center mt-5">
-                VALUE PACK
+                Muffins
               </h3>
             </div>
           </a>

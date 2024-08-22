@@ -683,6 +683,10 @@ button {
 .img-fluid {
   transition: transform 0.3s ease;
 }
+.boss {
+  height: 100px;
+  width: 100px;
+}
 
 .card:hover .img-fluid {
   transform: scale(1.05); /* Slightly scale the image */

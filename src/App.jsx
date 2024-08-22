@@ -6,10 +6,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import BakeryShop from "./components/BakeryShop";
 import Cart from "./components/Cart";
-import About from "./components/About";
+
 import Products from "./components/Products";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Testimonal from "./components/Testimonal";
+import Testimonial_section from "./components/Testimonial_section";
 import "./App.css";
 import croissant from "./assets/croissant.jpg";
 import baguette from "./assets/baguette.jpg";
@@ -108,8 +110,8 @@ const App = () => {
   };
 
   return (
-    <>
-      <Routes>
+    <div>
+      {/* <Routes>
         <Route
           path="/"
           element={
@@ -130,8 +132,9 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </>
+      </Routes> */}
+      <Testimonial_section />
+    </div>
   );
 };
 
