@@ -8,24 +8,19 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4efef;
+  background-color: #d0c5c5d9;
   color: #333;
   scroll-behavior: smooth;
-}
 
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 50px;
+  overflow-x: hidden;
 }
 
 /* Header */
 .header {
-  min-width: 100%;
+  
   background-color: #f95c5c;
   color: #fff;
   padding: 10px 0;
-  margin-left: 30px;
 }
 
 .header nav ul {
@@ -116,6 +111,9 @@ body {
 /* Main Content */
 main {
   margin-top: 20px;
+}
+main.container {
+  --bs-gutter-x: 0;
 }
 
 /* Bakery Shop Section */
@@ -690,4 +688,16 @@ button {
 
 .card:hover .img-fluid {
   transform: scale(1.05); /* Slightly scale the image */
+}
+.line {
+  background: #1c1b1b78;
+  height: 70px;
+  width: 2px;
+}
+.Testimonial_carasaul .carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: none;
+}
+.Testimonial_carasaul .carousel-indicators {
+  display: none;
 }

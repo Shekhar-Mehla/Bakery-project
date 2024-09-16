@@ -3,8 +3,8 @@ import testimonail_image from "../assets/testimoniajpg.webp";
 
 const Testimonal = () => {
   return (
-    <div className="">
-      <div className="card d-flex ">
+    <div className="testimonial">
+      <div className="card container  ">
         <div className="card-body">
           <p className="card-text">
             The cakes and pastries from [Your Bakery's Name] are exceptional!
@@ -14,9 +14,8 @@ const Testimonal = () => {
             them a standout choice for any occasion."
           </p>
         </div>
-        <div>|</div>
-        <img alt="..." className="card-img-bottom" src={testimonail_image} />
-        <h5 className="card-title">Shekar</h5>
+        <div className="line m-auto"></div>
+        <h5 className="card-title text-center">Shekar</h5>
         <p className="card-text">
           <small className="text-body-secondary">Last updated 3 mins ago</small>
         </p>

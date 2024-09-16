@@ -1,7 +1,7 @@
 // src/components/Contact.jsx
 
 import React from "react";
-import Layout from "./Layout";
+import Layout from "../components/Layout";
 
 const Contact = () => {
   return (

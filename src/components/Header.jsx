@@ -5,7 +5,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <header className="header bg-light">
+    <header className="header bg-light container shadow">
       <div className="">
         <nav className="navbar navbar-expand-lg navbar-light">
           <Link className="navbar-brand" to="/">
@@ -40,7 +40,7 @@ const Header = () => {
                       width="16"
                       height="16"
                       fill="currentColor"
-                      class="bi bi-search"
+                      className="bi bi-search"
                       viewBox="0 0 16 16"
                     >
                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
@@ -68,23 +68,20 @@ const Header = () => {
                     className="dropdown-menu"
                     aria-labelledby="dropdownMenuButton"
                   >
-                    <Link Link className="dropdown-item text-dark" to="/">
+                    <Link className="dropdown-item text-dark" to="/breads">
                       Bread
                     </Link>
-                    <Link Link className="dropdown-item text-dark" to="#">
+                    <Link className="dropdown-item text-dark" to="/cakes">
                       Cake
                     </Link>
-                    <Link Link className="dropdown-item text-dark" to="#">
+                    <Link className="dropdown-item text-dark" to="/pastries">
                       Pastries
                     </Link>
-                    <Link Link className="dropdown-item text-dark" to="#">
+                    <Link className="dropdown-item text-dark" to="/cookies">
                       Cookies
                     </Link>
-                    <Link Link className="dropdown-item text-dark" to="#">
+                    <Link className="dropdown-item text-dark" to="/muffins">
                       Muffins
-                    </Link>
-                    <Link Link className="dropdown-item text-dark" to="#">
-                      Bagels
                     </Link>
                   </div>
                 </div>
@@ -95,8 +92,8 @@ const Header = () => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
+                <Link className="nav-link" to="/gallery">
+                  Gallery
                 </Link>
               </li>
               <li className="nav-item">
@@ -111,11 +108,14 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/cart">
-                  <button type="button" class="btn btn-muted position-relative">
+                  <button
+                    type="button"
+                    className="btn btn-muted position-relative"
+                  >
                     <FontAwesomeIcon icon={faShoppingCart} size="2x" />
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                       99+
-                      <span class="visually-hidden">unread messages</span>
+                      <span className="visually-hidden">unread messages</span>
                     </span>
                   </button>
                 </Link>

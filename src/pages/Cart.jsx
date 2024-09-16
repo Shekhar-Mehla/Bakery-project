@@ -1,7 +1,7 @@
 import React from "react";
-import TotalPrice from "./TotalPrice";
-import Layout from "./Layout";
-import EmptyCart from "./EmptyCart";
+import TotalPrice from "../components/TotalPrice";
+import Layout from "../components/Layout";
+import EmptyCart from "../components/EmptyCart";
 
 const Cart = ({ cartItems }) => {
   console.log(cartItems.length);
@@ -13,7 +13,7 @@ const Cart = ({ cartItems }) => {
             key={item.id}
             className="card mb-3"
             style={{
-              maxWidth: "540px",
+              maxWidth: "539px",
             }}
           >
             <div className="row g-0">
