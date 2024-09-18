@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,9 +8,9 @@ const Header = () => {
     <header className="header bg-light container shadow">
       <div className="">
         <nav className="navbar navbar-expand-lg navbar-light">
-          <Link className="navbar-brand" to="/">
+          <NavLink className="navbar-brand" to="/">
             Your Logo
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -49,65 +49,37 @@ const Header = () => {
                 </form>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <NavLink className="nav-link" to="/">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item text-dark">
-                <div className="dropdown">
-                  <button
-                    className=" dropdown-toggle category"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Category
-                  </button>
-                  <div
-                    className="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <Link className="dropdown-item text-dark" to="/breads">
-                      Bread
-                    </Link>
-                    <Link className="dropdown-item text-dark" to="/cakes">
-                      Cake
-                    </Link>
-                    <Link className="dropdown-item text-dark" to="/pastries">
-                      Pastries
-                    </Link>
-                    <Link className="dropdown-item text-dark" to="/cookies">
-                      Cookies
-                    </Link>
-                    <Link className="dropdown-item text-dark" to="/muffins">
-                      Muffins
-                    </Link>
-                  </div>
-                </div>
-
-                {/* <Link className="nav-link" to="/products">
+                <NavLink className="nav-link" to="/products">
                   Products
-                </Link> */}
+                </NavLink>
+
+                {/* <NavLink className="nav-link" to="/products">
+                  Products
+                </NavLink> */}
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/gallery">
+                <NavLink className="nav-link" to="/gallery">
                   Gallery
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/services">
+                <NavLink className="nav-link" to="/services">
                   Services
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <NavLink className="nav-link" to="/contact">
                   Contact
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/cart">
+                <NavLink className="nav-link" to="/cart">
                   <button
                     type="button"
                     className="btn btn-muted position-relative"
@@ -118,7 +90,7 @@ const Header = () => {
                       <span className="visually-hidden">unread messages</span>
                     </span>
                   </button>
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
